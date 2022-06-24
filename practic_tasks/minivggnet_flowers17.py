@@ -71,4 +71,4 @@ plt.ylabel("Loss/Accuracy")
 plt.legend()
 plt.show()
 
-" python minivggnet_flowers17.py --dataset datasets/flowers17/images"
+"python minivggnet_flowers17.py --dataset datasets/flowers17/images"
