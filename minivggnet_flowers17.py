@@ -1,6 +1,4 @@
 # import the necessary packages
-import sys
-sys.path.append("pyimagesearch")
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
@@ -65,12 +63,12 @@ plt.style.use("ggplot")
 plt.figure()
 plt.plot(np.arange(0, 100), H.history["loss"], label="train_loss")
 plt.plot(np.arange(0, 100), H.history["val_loss"], label="val_loss")
-plt.plot(np.arange(0, 100), H.history["acc"], label="train_acc")
-plt.plot(np.arange(0, 100), H.history["val_acc"], label="val_acc")
+plt.plot(np.arange(0, 100), H.history["accuracy"], label="train_acc")
+plt.plot(np.arange(0, 100), H.history["val_accuracy"], label="val_acc")
 plt.title("Training Loss and Accuracy")
 plt.xlabel("Epoch #")
 plt.ylabel("Loss/Accuracy")
 plt.legend()
 plt.show()
 
-"python practic_tasks/minivggnet_flowers17.py --dataset datasets/flowers17/images"
+"python minivggnet_flowers17.py --dataset datasets/flowers17/images"
