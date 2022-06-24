@@ -1,4 +1,6 @@
 # import the necessary packages
+import sys
+sys.path.append("pyimagesearch")
 from sklearn.preprocessing import LabelBinarizer
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
@@ -71,4 +73,4 @@ plt.ylabel("Loss/Accuracy")
 plt.legend()
 plt.show()
 
-"python minivggnet_flowers17.py --dataset datasets/flowers17/images"
+"python practic_tasks/minivggnet_flowers17.py --dataset datasets/flowers17/images"
