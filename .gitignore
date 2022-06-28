@@ -1,2 +1,4 @@
 /pyimagesearch/datasets/animals/hdf5/features.hdf5
 /pyimagesearch/datasets/flowers17/hdf5/features.hdf5
+/pyimagesearch/datasets/animals/animals.cpickle
+/pyimagesearch/datasets/flowers17/flowers17.cpickle
