@@ -41,3 +41,5 @@ f.close()
 # close the database
 db.close()
 
+"python train_model.py --db pyimagesearch/datasets/animals/hdf5/features.hdf5 --model pyimagesearch/datasets/animals/animals.cpickle"
+"python train_model.py --db pyimagesearch/datasets/flowers17/hdf5/features.hdf5 --model pyimagesearch/datasets/flowers17/flowers17.cpickle"
