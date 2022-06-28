@@ -92,6 +92,6 @@ pbar.finish()
 
 
 "python extract_features.py --dataset pyimagesearch/datasets/animals/images --output pyimagesearch/datasets/animals/hdf5/features.hdf5"
-"python extract_features.py --dataset pyimagesearch/datasets/flower17/images --output pyimagesearch/datasets/flower17/hdf5/features.hdf5"
+"python extract_features.py --dataset pyimagesearch/datasets/flowers17/images --output pyimagesearch/datasets/flowers17/hdf5/features.hdf5"
 
 
