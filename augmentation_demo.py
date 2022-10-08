@@ -21,7 +21,8 @@ image = np.expand_dims(image, axis=0)
 
 # construct the image generator for data augmentation then
 # initialize the total number of images generated thus far
-aug = ImageDataGenerator(rotation_range=30, width_shift_range=0.1, height_shift_range=0.1, shear_range=0.2, zoom_range=0.2, horizontal_flip=True, fill_mode="nearest")
+aug = ImageDataGenerator(rotation_range=30, width_shift_range=0.1, height_shift_range=0.1,
+                         shear_range=0.2, zoom_range=0.2, horizontal_flip=True, fill_mode="nearest")
 total = 0
 
 # construct the actual Python generator
@@ -37,4 +38,4 @@ for image in imageGen:
     # if we have reached 10 examples, break from the loop
     if total == 10:
         break
-"python practic_tasks/augmentation_demo.py --image cat.jpg --output output_augmentation"
+"python augmentation_demo.py --i dog.png --output output_augmentation"
