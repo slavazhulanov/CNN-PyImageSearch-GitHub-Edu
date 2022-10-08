@@ -17,9 +17,9 @@ import os
 ap = argparse.ArgumentParser()
 ap.add_argument("-d", "--dataset", required = True, help = "path to input dataset")
 ap.add_argument("-o", "--output", required = True, help = "path to output HDF5 file")
-ap.add_argument("-b", "--batch_size", type = int, default = 8,
+ap.add_argument("-b", "--batch_size", type = int, default = 2,
     help = "batch size of images to be passed through network")
-ap.add_argument("-s", "--buffer_size", type = int, default = 100,
+ap.add_argument("-s", "--buffer_size", type = int, default = 10,
     help = "size of feature extraction buffer")
 args = vars(ap.parse_args())
 
