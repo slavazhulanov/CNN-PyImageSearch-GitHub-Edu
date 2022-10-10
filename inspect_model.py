@@ -16,3 +16,6 @@ print("[INFO] showing layers...")
 # console
 for (i, layer) in enumerate(model.layers):
     print("[INFO] {}\t{}".format(i, layer.__class__.__name__))
+
+"python inspect_model.py"
+"python inspect_model.py --include-top -1"
