@@ -2,3 +2,10 @@
 /pyimagesearch/datasets/flowers17/hdf5/features.hdf5
 /pyimagesearch/datasets/animals/animals.cpickle
 /pyimagesearch/datasets/flowers17/flowers17.cpickle
+/models/model_0.model/keras_metadata.pb
+/models/model_0.model/saved_model.pb
+/pyimagesearch/datasets/kaggle_dogs_vs_cats/train/
+/models/model_0.model/assets/
+/models/model_0.model/variables/
+/models/model_0.model/variables/variables.data-00000-of-00001
+/models/model_0.model/variables/variables.index
