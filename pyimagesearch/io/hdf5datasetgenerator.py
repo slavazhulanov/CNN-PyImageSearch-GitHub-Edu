@@ -22,11 +22,13 @@ class HDF5DatasetGenerator:
     def generator(self, passes=np.inf):
         # initialize the epoch count
         epochs = 0
-
+        print("[INFO] initialize the epoch count...")
+        print(f"[INFO] {passes}")
         # keep looping infinitely -- the model will stop once we have
         # reach the desired number of epochs
         while epochs < passes:
             # loop over the HDF5 dataset
+            print("[INFO] loop over the HDF5 dataset...")
             for i in np.arange(0, self.numImages, self.batchSize):
                 # extract the images and labels from the HDF dataset
                 images = self.db["images"][i: i + self.batchSize]
