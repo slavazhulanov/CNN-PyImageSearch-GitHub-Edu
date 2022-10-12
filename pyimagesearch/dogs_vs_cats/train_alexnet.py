@@ -44,7 +44,7 @@ model.compile(loss="binary_crossentropy", optimizer=opt, metrics=["accuracy"])
 path = os.path.sep.join([config.OUTPUT_PATH, "{}.png".format(os.getpid())])
 callbacks = [TrainingMonitor(path)]
 
-print("[INFO] train the network")
+print("[INFO] train the network...")
 model.fit_generator(
     trainGen.generator(),
     steps_per_epoch=trainGen.numImages // 128,
