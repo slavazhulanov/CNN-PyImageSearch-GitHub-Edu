@@ -9,3 +9,7 @@
 /models/model_0.model/variables/
 /models/model_0.model/variables/variables.data-00000-of-00001
 /models/model_0.model/variables/variables.index
+/pyimagesearch/datasets/kaggle_dogs_vs_cats/hdf5/test.hdf5
+/pyimagesearch/datasets/kaggle_dogs_vs_cats/hdf5/train.hdf5
+/pyimagesearch/datasets/kaggle_dogs_vs_cats/hdf5/val.hdf5
+/pyimagesearch/dogs_vs_cats/output/dogs_vs_cats_mean.json
