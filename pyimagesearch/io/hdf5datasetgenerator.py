@@ -6,7 +6,7 @@ import h5py
 class HDF5DatasetGenerator:
     def __init__(self, dbPath, batchSize, preprocessors=None, aug=None, binarize=True, classes=2):
         # store the batch size, preprocessors, and data augmentor,
-        # whether or not the labels should be binarized, along with
+        # whether_or_not the labels should be binarized, along with
         # the total number of classes
         self.batchSize = batchSize
         self.preprocessors = preprocessors
@@ -38,15 +38,18 @@ class HDF5DatasetGenerator:
 
                 if self.preprocessors is not None:
                     # initialize the list of processed images
-                procImages = []
-                # loop over the images
-                for image in images:
-                    # loop over the preprocessors and apply each
-                    # to the image
-                    for p in self.preprocessors:
-                        image = p.preprocess(image)
-                        # update the list of processed images
-                        procImages.append(image)
+                    procImages = []
+
+                    # loop over the images
+                    for image in images:
+                        # loop over the preprocessors and apply each
+                        # to the image
+                            for p in self.preprocessors:
+                                image = p.preprocess(image)
+
+                            # update the list of processed images
+                            procImages.append(image)
+
                     # update the images array to be the processed
                     # images
                     images = np.array(procImages)
