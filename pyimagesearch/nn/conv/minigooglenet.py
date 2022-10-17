@@ -16,11 +16,11 @@ class MiniGoogLeNet:
     @staticmethod
     def conv_module(x, K, kX, kY, stride, chanDim, padding="same"):
         # define a CONV => BN => RELU pattern
-
         x = Conv2D(K, (kX, kY), strides=stride, padding=padding)(x)
         x = BatchNormalization(axis=chanDim)(x)
         x = Activation("relu")(x)
         # return the block
+
         return x
 
     @staticmethod
@@ -28,7 +28,7 @@ class MiniGoogLeNet:
         # define two CONV modules, then concatenate across the
 
         # channel dimension
-        conv_1x1 = MiniGoogLeNet.conv_module(x, numK1x1, 1, (1, 1), chanDim)
+        conv_1x1 = MiniGoogLeNet.conv_module(x, numK1x1, 1, 1, (1, 1), chanDim)
         conv_3x3 = MiniGoogLeNet.conv_module(x, numK3x3, 3, 3, (1, 1), chanDim)
         x = concatenate([conv_1x1, conv_3x3], axis=chanDim)
         # return the block
@@ -48,11 +48,11 @@ class MiniGoogLeNet:
     def build(width, height, depth, classes):
         # initialize the input shape to be "channels last" and the
 
-        # channels dimension itsel
+        # channels dimension it sel
         inputShape = (height, width, depth)
         chanDim = -1
         # if we are using "channels first", update the input shape
-        # and channels dimensio
+        # and channels dimension
         if K.image_data_format() == "channels_first":
             inputShape = (depth, height, width)
             chanDim = 1

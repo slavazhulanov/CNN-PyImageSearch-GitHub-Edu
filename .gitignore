@@ -13,3 +13,4 @@
 /pyimagesearch/datasets/kaggle_dogs_vs_cats/hdf5/train.hdf5
 /pyimagesearch/datasets/kaggle_dogs_vs_cats/hdf5/val.hdf5
 /pyimagesearch/dogs_vs_cats/output/dogs_vs_cats_mean.json
+/pyimagesearch/datasets/tiny-imagenet-200/
